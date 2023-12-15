@@ -5,11 +5,21 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "onedark",
-  theme_toggle = { "onedark", "one_light" },
+  theme = "catppuccin",
+  theme_toggle = { "catppuccin", "one_light" },
+
+  -- transparency = true,
 
   hl_override = highlights.override,
   hl_add = highlights.add,
+
+  nvdash = {
+    -- load_on_startup = true,
+  },
+
+  telescope = {
+    style = "bordered",
+  },
 }
 
 M.plugins = "custom.plugins"
